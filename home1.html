@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Pneumonia Predictor</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; background-color: #f2f6fc;">
+
+    <!-- Header -->
+    <div style="background-color: #0077b6; padding: 20px; text-align: center; color: white;">
+        <h1 style="margin: 0;">🩺 AI Pneumonia Detector</h1>
+        <p style="margin: 5px 0;">Upload a chest X-ray image to detect the possibility of pneumonia.</p>
+    </div>
+
+    <!-- Upload Box -->
+    <div style="max-width: 400px; margin: 50px auto; padding: 30px; background-color: white; box-shadow: 0 0 15px rgba(0,0,0,0.1); border-radius: 10px;">
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+            <label style="font-weight: bold;">Select Chest X-ray Image:</label><br><br>
+            <input type="file" name="file" accept="image/*" required style="margin-bottom: 20px;"><br>
+            <input type="submit" value="🔍 Predict" style="padding: 10px 20px; background-color: #0077b6; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align: center; margin-top: 30px; color: #888;">
+        <p>⚠️ This tool is for educational purposes only. Not for medical diagnosis.</p>
+    </div>
+
+</body>
+</html>

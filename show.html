@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        .result {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .confidence {
+            font-size: 16px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% if label %}
+            <div class="result"><strong>Prediction:</strong> {{ label }}</div>
+        {% endif %}
+        
+        {% if confidence %}
+            <div class="confidence"><strong>Confidence:</strong> {{ confidence }}%</div>
+        {% endif %}
+    </div>
+</body>
+</html>
