@@ -1,5 +1,6 @@
-flask==3.0.0
-gunicorn==21.2.0
-tensorflow==2.15.0
+flask
+gunicorn
+tensorflow
 numpy
 pillow
+h5py
